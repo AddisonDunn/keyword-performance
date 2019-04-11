@@ -1,0 +1,10 @@
+google-api-python-client
+pandas
+pandas_datareader
+tweepy
+nltk
+matplotlib
+fix_yahoo_finance
+numpy
+webOb
+Paste
