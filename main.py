@@ -3,9 +3,9 @@ import sys
 sys.path.insert(0, 'lib')
 import webapp2
 import paste
-import keyword_extraction
+# import keyword_extraction
 # import twitter_streaming
-import price_extraction
+# import price_extraction
 
 ############-----------WEB APP CODE-------------------###########
 class MainPage(webapp2.RequestHandler):
@@ -31,10 +31,10 @@ class Prices(webapp2.RequestHandler):
             <head><title>Streaming</title></head>
             <body>
             Here are today's stock price changes: """)
-      price_extraction.extract()
-      self.response.write(price_extraction.price_changes)
+      # price_extraction.extract()
+      # self.response.write(price_extraction.price_changes)
       self.response.write(""" <tb> The average change: """)
-      self.response.write(price_extraction.avg_change)
+      # self.response.write(price_extraction.avg_change)
       self.response.write("""
               <form action="/" method="get">  
                 <input type="submit" value="Return">
